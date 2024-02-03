@@ -1,4 +1,4 @@
-ef fib(n):
+def fib(n):
     if (n < 0):
         return("Index Error")
     else:
