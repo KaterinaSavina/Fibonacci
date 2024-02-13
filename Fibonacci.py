@@ -1,17 +1,17 @@
 def fib(n):
+    n = int(n)
     if (n < 0):
-        return("Index Error")
+        return("Порядковый номер - это положительное число")
     else:
         index = 0
         fib = 0
-        fib_new = 0
         middle = 1
         while index < n:
             fib_new = fib + middle
             fib = middle
             middle = fib_new
             index = index + 1
-            print(fib)
-        fib_new = str(fib)
-        return(fib_new)
-print(fib(8))
+        return(fib)
+
+index = input("Введите № числа Фибоначчи ")
+print(fib(index))
